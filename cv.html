@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radi Ayed Alanzi - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main {
+            padding: 15px;
+            background: #fff;
+        }
+        .skills, .experience {
+            margin: 20px 0;
+        }
+        .skills ul, .experience ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li, .experience li {
+            padding: 10px;
+            border-bottom: 1px #ccc dotted;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Radi Ayed Alanzi</h1>
+            <h2>IT Student at Tabuk University</h2>
+        </div>
+    </header>
+    <div class="container main">
+        <section class="skills">
+            <h3>Skills</h3>
+            <ul id="skills-list">
+                <li>Programming Languages: JavaScript, HTML, CSS, Python, Java</li>
+                <li>Web Development: HTML5, CSS3, JavaScript, React</li>
+                <li>Database Management: SQL, MySQL</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Problem Solving and Debugging</li>
+            </ul>
+        </section>
+        <section class="experience">
+            <h3>Experience</h3>
+            <ul id="experience-list">
+                <li>Intern at XYZ Company, June 2023 - August 2023</li>
+                <li>Freelance Web Developer, 2022 - Present</li>
+                <li>Volunteered at ABC Tech Community, 2021 - 2022</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        const skills = [
+            "Programming Languages: JavaScript, HTML, CSS, Python, Java",
+            "Web Development: HTML5, CSS3, JavaScript, React",
+            "Database Management: SQL, MySQL",
+            "Version Control: Git, GitHub",
+            "Problem Solving and Debugging"
+        ];
+
+        const experience = [
+            "Intern at XYZ Company, June 2023 - August 2023",
+            "Freelance Web Developer, 2022 - Present",
+            "Volunteered at ABC Tech Community, 2021 - 2022"
+        ];
+
+        const skillsList = document.getElementById('skills-list');
+        const experienceList = document.getElementById('experience-list');
+
+        skills.forEach(skill => {
+            let li = document.createElement('li');
+            li.appendChild(document.createTextNode(skill));
+            skillsList.appendChild(li);
+        });
+
+        experience.forEach(exp => {
+            let li = document.createElement('li');
+            li.appendChild(document.createTextNode(exp));
+            experienceList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
